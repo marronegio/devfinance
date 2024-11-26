@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --brand-blue: #21ABE6;
+    --brand-blue-dark: #136c92;
+    --light-bg: #343434;
+    --background: #272727;
+
+    --income: #42B617;
+    --outcome: #E32727;
+    --dark-txt: #898989;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+h1 span {
+    color: var(--brand-blue)
+}
+
+
+body {
+    background-color: var(--background);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: var(--light-bg);
+    width: 112rem;
+    height: 42rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--brand-blue);
+    border-top: 0;
+    border-bottom-left-radius: 8rem;
+    border-bottom-right-radius: 8rem;
+    position: relative;
+}
+
+header .slogan {
+    font-size: 1.8rem;
+    margin-top: -1.2rem;
+}
+
+header .total {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.total p {
+    font-size: 1.8rem;
+}
+
+.total h2 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.buttons {
+    position: absolute;
+    bottom: -28px;
+
+    display: flex;
+    gap: 24rem;
+}
+
+.buttons button {
+    padding: 1rem 4rem;
+    background-color: var(--brand-blue);
+    color: white;
+    border: none;
+    border-radius: 1.2rem;
+    font-size: 2.4rem;
+
+    cursor: pointer;
+}
+
+.buttons button:nth-child(2) {
+    background-color: var(--brand-blue-dark);
+}
+
+main {
+    margin-top: 8rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    width: 112rem;
+    background-color: var(--light-bg);
+    font-size: 1.8rem;
+
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    border-radius: 1.2rem;
+}
+
+li div {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+.income {
+    color: var(--income);
+    font-weight: 600;
+}
+
+.outcome {
+    color: var(--outcome);
+    font-weight: 600;
+}
+
+.date {
+    color: var(--dark-txt);
+    font-size: 1.4rem;
+}
+
+.right-side button {
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.right-side button:hover {
+    cursor: pointer;
+}
+
+.right-side button img {
+    width: 3rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.description {
+    overflow: hidden;
+    max-width: 55rem;
+}
